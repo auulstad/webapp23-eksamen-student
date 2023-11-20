@@ -2,12 +2,22 @@
 
 import { useState } from "react"
 import type { FormEvent, MouseEvent } from "react"
+import { calculateSolution } from "./Tasks"
 
 export default function Answer() {
   const [answer, setAnswer] = useState(0)
 
   const send = (event: MouseEvent<HTMLButtonElement>) => {
     event.preventDefault()
+/*
+    const correctAnswer = calculateSolution(data, type);
+
+    if (answer === correctAnswer) {
+      console.log("Riktig svar!");
+    } else {
+      console.log("Feil svar!");
+    }
+    */ 
     console.log(answer)
   }
 

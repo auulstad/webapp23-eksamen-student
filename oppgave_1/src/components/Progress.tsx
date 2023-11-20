@@ -7,7 +7,7 @@ import { type Task } from "@/types"
 
 export default function Progress(props: { tasks: Task[] }) {
   const [state, setState] = useState(0)
-  const currentTask = props.tasks[state]
+  const currentTask = props.tasks[state];
 
   const next = (event: MouseEvent<HTMLButtonElement>) => {
     console.log(event)
